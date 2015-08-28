@@ -1,41 +1,23 @@
 # HANDS-ON REACT
 
+[check diff with previous step](https://github.com/plouc/hands-on-react/compare/step-1...step-2)
+
 ```sh
-git checkout step-1
+git checkout step-2
 ```
 
-## Step 1
+## Step 2
 
-- **jsx** basics
+- components **props**
+- props **validation**
+- component lists
 
-### Step 1.A
+### Step 2.A
 
-Move all html markup to react components, you'll find comments inside index.html
-which define the component the markup is related to, for example:
+You have an example of how to define required component props in `Header.jsx`, and how they're passed to it in `App.jsx`.
+Change **Footer** component to make it configurable via props.
 
-```html
-<!-- begin Header.jsx -->
-<header class="app_header">
-    Hands-On React!
-</header>
-<!-- end Header.jsx -->
-```
+### Step 2.B
 
-It means this markup should go inside `src/js/components/Header.jsx`:
-
-```javascript
-class Header extends Component {
-    render() {
-        return (
-            <header className="app_header">
-                Hands-On React!
-            </header>
-        );
-    }
-}
-```
-
-### Step 1.B
-
-Perhaps you noticed, there's no **Footer** component,
-creates it (hint: it's really similar to **Header** :))
+You'll see the **Controls** component now uses a loop to generate each button.
+Change **PackageList** component in order to use a loop to generate each list item.
