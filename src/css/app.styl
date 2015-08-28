@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,600,800|Montserrat:400,700')
+
+header-height       = 60px
+footer-height       = 50px
+control-size        = 80px
+control-circle-size = 52px
+pack-version-size   = 86px
+
+clearfix()
+  zoom 1
+  &:after
+  &:before
+    content ""
+    display table
+  &:after
+    clear both
+
+*
+  box-sizing border-box
+
+body
+  background-color #fff
+  color            #000
+
+  text-rendering optimizeLegibility
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+  font-family 'Open Sans', sans-serif
+  font-size 18px
+  line-height 24px
+
+.app
+  &_header,
+  &_footer
+    position fixed
+    width  100%
+    left 0
+    z-index 200
+    background-color #055dad
+    color            #fff
+
+  &_header
+    text-align center
+    height      header-height
+    line-height header-height
+    top 0
+    font-weight 700
+    font-family 'Montserrat', sans-serif
+    font-size 26px
+    padding 0 20px
+
+  &_footer
+    height      footer-height
+    line-height footer-height
+    bottom 0
+    padding 0 20px
+    text-align right
+
+  &_controls
+    position fixed
+    top    header-height
+    bottom footer-height
+    left   0
+    width control-size
+    background-color #0068c8
+
+  &_control
+    cursor pointer
+    position relative
+    display block
+    width  control-size
+    height control-size
+    color #fff
+
+    &_circle
+      position absolute
+      display block
+      width       control-circle-size
+      height      control-circle-size
+      line-height control-circle-size
+      top  ((control-size - control-circle-size) / 2)
+      left ((control-size - control-circle-size) / 2)
+      border-radius (control-circle-size / 2)
+      border 1px solid rgba(255, 255, 255, 0.35)
+      text-align center
+
+    &:hover
+      .app_control_circle
+        border-color rgba(255, 255, 255, 1)
+
+  &_content
+    position fixed
+    top    header-height
+    right  0
+    bottom footer-height
+    left   control-size
+
+.pack
+  &_list,
+  &_info
+    float left
+    width  50%
+    height 100%
+
+  &_info
+    background-color #0068c8
+    color            #fff
+
+    &_header
+      clearfix()
+      position relative
+      background-color #222
+      padding-top 20px
+      padding-bottom ((pack-version-size / 2) + 20px)
+      margin-bottom  ((pack-version-size / 2) + 10px)
+
+    &_title
+      margin 0 0 15px 0
+      font-weight 400
+      font-family 'Montserrat', sans-serif
+      text-transform uppercase
+      text-align center
+      text-shadow 0 1px 1px rgba(0, 0, 0, 1)
+
+    &_version
+      position absolute
+      display block
+      width       pack-version-size
+      height      pack-version-size
+      line-height (pack-version-size - 6px)
+      background-color  #0460b4
+      bottom      ((pack-version-size / 2) * -1)
+      margin-left ((pack-version-size / 2) * -1)
+      border-radius (pack-version-size / 2)
+      font-size 18px
+      left 50%
+      text-align center
+      font-weight 800
+      border 2px solid #fff
+
+    &_desc
+      padding 0 20px
+
+  &_list
+    background-color #222
+
+    &_item
+      background-color #333
+      color            #ccc
+      position relative
+      padding 10px 15px
+      border-bottom 1px solid #222
+      cursor pointer
+      transition background-color 200ms
+
+      &._is-active
+        color #fff
+
+      .pack_version
+        position absolute
+        top   10px
+        right 15px
+
+      &_title
+        margin 0
+        font-weight 600
+        font-size 16px
+
+      &:hover
+        background-color #444
+        color            #498EE0
+
+  &_tags
+    text-align center
+
+  &_tag
+    cursor pointer
+    display inline-block
+    height 26px
+    border 1px solid #ccc
+    color #ccc
+    font-size 14px
+    padding 0 11px
+    border-radius 13px
+
+  &_version
+    font-weight 800
+    display inline-block
+    padding 6px 9px
+    background #333
+    color #ccc
+    border-radius 2px
+    font-size 13px
+    line-height 1em
+    border 1px solid #ccc
