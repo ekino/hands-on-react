@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hands-On React!</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- begin Header.jsx -->
+    <header class="app_header">
+        Hands-On React!
+    </header>
+    <!-- end Header.jsx -->
+
+    <!-- begin Controls.jsx -->
+    <aside class="app_controls">
+        <span class="app_control">
+            <span class="app_control_circle">
+                <i class="fa fa-star-o"></i>
+            </span>
+        </span>
+        <span class="app_control">
+            <span class="app_control_circle">
+                <i class="fa fa-heart-o"></i>
+            </span>
+        </span>
+    </aside>
+    <!-- end Controls.jsx -->
+
+    <div class="app_content">
+        <!-- begin PackageList.jsx -->
+        <section class="pack_list">
+            <div class="pack_list_item">
+                <h3 class="pack_list_item_title">react</h3>
+                <span class="pack_version">1.0.3</span>
+            </div>
+            <div class="pack_list_item _is-active">
+                <h3 class="pack_list_item_title">react-motion</h3>
+                <span class="pack_version">1.0.3</span>
+            </div>
+            <div class="pack_list_item">
+                <h3 class="pack_list_item_title">react-bootstrap</h3>
+                <span class="pack_version">1.0.3</span>
+            </div>
+            <div class="pack_list_item">
+                <h3 class="pack_list_item_title">react-router</h3>
+                <span class="pack_version">1.0.3</span>
+            </div>
+            <div class="pack_list_item">
+                <h3 class="pack_list_item_title">react-classes</h3>
+                <span class="pack_version">1.0.3</span>
+            </div>
+        </section>
+        <!-- end PackageList.jsx -->
+
+        <!-- begin PackageInfo.jsx -->
+        <section class="pack_info">
+            <header class="pack_info_header">
+                <h2 class="pack_info_title">react</h2>
+                <div class="pack_tags">
+                    <span class="pack_tag">react</span>
+                    <span class="pack_tag">jsx</span>
+                    <span class="pack_tag">transformer</span>
+                    <span class="pack_tag">view</span>
+                </div>
+                <span class="pack_info_version">1.0.3</span>
+            </header>
+            <div class="pack_info_desc">
+                A declarative, efficient, and flexible JavaScript library for building user interfaces.
+            </div>
+        </section>
+        <!-- end PackageInfo.jsx -->
+    </div>
+
+    <!-- begin Footer.jsx -->
+    <footer class="app_footer">
+        APP FOOTER
+    </footer>
+    <!-- end Footer.jsx -->
+
+    <div id="app"></div>
+    <script src="bundle.js"></script>
+</body>
+</html>
