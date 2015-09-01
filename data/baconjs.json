@@ -1,0 +1,24 @@
+{
+    "name": "baconjs",
+    "version": "0.7.71",
+    "description": "A small functional reactive programming lib for JavaScript.",
+    "keywords": [
+        "bacon.js",
+        "bacon",
+        "frp",
+        "functional",
+        "reactive",
+        "programming",
+        "stream",
+        "streams",
+        "EventStream",
+        "Rx",
+        "RxJs",
+        "Observable"
+    ],
+    "githubRepo": "https://github.com/baconjs/bacon.js",
+    "githubStars": 4559,
+    "githubWatchers": 4559,
+    "githubForks": 270,
+    "homepage": ""
+}

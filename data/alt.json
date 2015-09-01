@@ -1,0 +1,18 @@
+{
+    "name": "alt",
+    "version": "0.17.1",
+    "description": "A flux implementation",
+    "keywords": [
+        "alt",
+        "es6",
+        "flow",
+        "flux",
+        "react",
+        "unidirectional"
+    ],
+    "githubRepo": "https://github.com/goatslacker/alt",
+    "githubStars": 1923,
+    "githubWatchers": 1923,
+    "githubForks": 191,
+    "homepage": "http://alt.js.org/"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "kefir",
+    "version": "2.8.1",
+    "description": "Reactive Programming library for JavaScript inspired by Bacon.js and RxJS with focus on high performance and low memory usage",
+    "keywords": [
+        "frp",
+        "bacon",
+        "bacon.js",
+        "kefir",
+        "kefir.js",
+        "functional",
+        "reactive",
+        "stream",
+        "streams",
+        "EventStream",
+        "Rx",
+        "RxJs",
+        "Observable"
+    ],
+    "githubRepo": "https://github.com/rpominov/kefir",
+    "githubStars": 708,
+    "githubWatchers": 708,
+    "githubForks": 42,
+    "homepage": "http://rpominov.github.io/kefir"
+}

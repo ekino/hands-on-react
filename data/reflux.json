@@ -1,0 +1,20 @@
+{
+    "name": "reflux",
+    "version": "0.2.12",
+    "description": "A simple library for uni-directional dataflow application architecture inspired by ReactJS Flux",
+    "keywords": [
+        "reflux",
+        "react",
+        "flux",
+        "architecture",
+        "dataflow",
+        "action",
+        "event",
+        "data"
+    ],
+    "githubRepo": "https://github.com/reflux/refluxjs",
+    "githubStars": 3620,
+    "githubWatchers": 3620,
+    "githubForks": 222,
+    "homepage": ""
+}

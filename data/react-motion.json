@@ -1,0 +1,22 @@
+{
+    "name": "react-motion",
+    "version": "0.2.7",
+    "description": "A spring that solves your animation problems.",
+    "keywords": [
+        "react",
+        "component",
+        "react-component",
+        "transitiongroup",
+        "spring",
+        "tween",
+        "motion",
+        "animation",
+        "transition",
+        "ui"
+    ],
+    "githubRepo": "https://github.com/chenglou/react-motion",
+    "githubStars": 1905,
+    "githubWatchers": 1905,
+    "githubForks": 72,
+    "homepage": ""
+}

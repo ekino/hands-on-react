@@ -1,0 +1,20 @@
+{
+    "name": "react-select",
+    "version": "0.6.7",
+    "description": "A Select control built with and for ReactJS",
+    "keywords": [
+        "combobox",
+        "form",
+        "input",
+        "multiselect",
+        "react",
+        "react-component",
+        "select",
+        "ui"
+    ],
+    "githubRepo": "https://github.com/JedWatson/react-select",
+    "githubStars": 1217,
+    "githubWatchers": 1217,
+    "githubForks": 317,
+    "homepage": "http://jedwatson.github.io/react-select/"
+}

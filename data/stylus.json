@@ -1,0 +1,18 @@
+{
+    "name": "stylus",
+    "version": "0.52.0",
+    "description": "Robust, expressive, and feature-rich CSS superset",
+    "keywords": [
+        "css",
+        "parser",
+        "style",
+        "stylesheets",
+        "jade",
+        "language"
+    ],
+    "githubRepo": "https://github.com/stylus/stylus",
+    "githubStars": 6081,
+    "githubWatchers": 6081,
+    "githubForks": 829,
+    "homepage": "http://learnboost.github.com/stylus/"
+}

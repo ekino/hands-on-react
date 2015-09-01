@@ -1,0 +1,17 @@
+{
+    "name": "react-dropzone",
+    "version": "2.0.1",
+    "description": "Simple HTML5 drag-drop zone with React.js",
+    "keywords": [
+        "react-component",
+        "react",
+        "drag",
+        "drop",
+        "upload"
+    ],
+    "githubRepo": "https://github.com/paramaggarwal/react-dropzone",
+    "githubStars": 377,
+    "githubWatchers": 377,
+    "githubForks": 68,
+    "homepage": "http://paramaggarwal.github.io/react-dropzone/"
+}
