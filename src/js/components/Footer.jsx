@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 
 class Footer extends Component {
     render() {
-        return null;
+        return (
+            <footer className="app_footer">
+                APP FOOTER
+            </footer>
+        );
     }
 }
 
