@@ -8,6 +8,8 @@
 git checkout step-1
 ```
 
+### STEP 1-A
+
 Move all html markup to react components, you'll find comments inside index.html
 which define the component the markup is related to, for example:
 
@@ -32,6 +34,11 @@ class Header extends Component {
     }
 }
 ```
+
+### STEP 1-B
+
+Perhaps you noticed, there's no **Footer** component,
+creates it (hint: it's really similar to **Header** :))
 
 
 ## STEP 2
