@@ -2,8 +2,10 @@
 
 ## STEP 1
 
-Move all html markup to jsx components, you'll find comments inside index.html
-which define which component the markup is related to, for example:
+- jsx basics
+
+Move all html markup to react components, you'll find comments inside index.html
+which define the component the markup is related to, for example:
 
 ```html
 <!-- begin Header.jsx -->
