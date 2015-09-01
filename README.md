@@ -1,7 +1,5 @@
 # HANDS-ON REACT
 
-[check diff with previous step](https://github.com/plouc/hands-on-react/compare/step-2...step-3)
-
 ```sh
 git checkout step-3
 ```
