@@ -7,7 +7,7 @@ class PackageList extends Component {
 
         let packageNodes = packages.map(pack => {
             return (
-                <div className="pack_list_item">
+                <div key={pack.name} className="pack_list_item">
                     <h3 className="pack_list_item_title">{pack.name}</h3>
                     <span className="pack_version">{pack.version}</span>
                 </div>
