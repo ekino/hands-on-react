@@ -5,7 +5,6 @@ import Controls             from './components/Controls.jsx';
 import PackageList          from './components/PackageList.jsx';
 import PackageInfo          from './components/PackageInfo.jsx';
 import Footer               from './components/Footer.jsx';
-import Api                  from './Api';
 
 
 const packages = [
