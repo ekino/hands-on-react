@@ -39,3 +39,5 @@ class Header extends Component {
 
 Perhaps you noticed, there's no **Footer** component,
 creates it (hint: it's really similar to **Header** :))
+
+[next step >](https://github.com/plouc/hands-on-react/tree/step-2)
