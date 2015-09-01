@@ -2,7 +2,7 @@
 
 ## STEP 1
 
-- jsx basics
+- **jsx** basics
 
 ```sh
 git checkout step-1
@@ -36,8 +36,8 @@ class Header extends Component {
 
 ## STEP 2
 
-- components props
-- props validation
+- components **props**
+- props **validation**
 - component lists
 
 ```sh
@@ -53,3 +53,9 @@ Change **Footer** component to make it configurable via props.
 
 You'll see the **Controls** component now uses a loop to generate each button.
 Change **PackageList** component in order to use a loop to generate each list item.
+
+
+## STEP 3
+
+- loading **async data**
+- using component **state**

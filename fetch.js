@@ -9,7 +9,7 @@ var githubApiUrl   = 'https://api.github.com';
 var githubRawUrl   = 'https://raw.githubusercontent.com';
 var githubApiToken = 'PUT_YOUR_GITHUB_API_TOKEN_HERE';
 
-var dataDir        = 'data';
+var dataDir        = 'build/data';
 
 
 console.log(chalk.yellow('fetching github repository info'));

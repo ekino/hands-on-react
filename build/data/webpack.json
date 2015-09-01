@@ -3,8 +3,8 @@
     "version": "1.12.0",
     "description": "Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jade, coffee, css, less, ... and your custom stuff.",
     "githubRepo": "https://github.com/webpack/webpack",
-    "githubStars": 7615,
-    "githubWatchers": 7615,
+    "githubStars": 7618,
+    "githubWatchers": 7618,
     "githubForks": 471,
     "homepage": "https://webpack.github.io"
 }

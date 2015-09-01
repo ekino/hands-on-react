@@ -4,6 +4,7 @@ import Header   from './components/Header.jsx';
 import Controls from './components/Controls.jsx';
 import Content  from './components/Content.jsx';
 import Footer   from './components/Footer.jsx';
+import Api      from './Api';
 
 const packages = [
     { name: 'react',           version: '1.0.3' },
@@ -20,7 +21,17 @@ let currentPackage = {
     description: 'A declarative, efficient, and flexible JavaScript library for building user interfaces.'
 };
 
+Api.one('react-motion');
+
 const App = React.createClass({
+    constructor(props) {
+        super(props);
+        this.state = {
+            packages: [],
+            current:  null
+        };
+    }
+
     render() {
         return (
             <div>
