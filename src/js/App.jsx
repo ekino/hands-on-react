@@ -11,7 +11,7 @@ const App = React.createClass({
         return (
             <div>
                 <Header title="Hands-On React!"/>
-                <Controls/>
+                <Controls items={['star-o', 'heart-o']}/>
                 <Content/>
                 <Footer/>
             </div>
