@@ -1,27 +1,41 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 
 class PackageInfo extends Component {
     render() {
+        let { pack } = this.props;
+
+        let tagNodes = pack.tags.map(tag => {
+            return (
+                <span key={tag} className="pack_tag">{tag}</span>
+            );
+        });
+
         return (
             <section className="pack_info">
                 <header className="pack_info_header">
-                    <h2 className="pack_info_title">react-motion</h2>
+                    <h2 className="pack_info_title">{pack.name}</h2>
                     <div className="pack_tags">
-                        <span className="pack_tag">motion</span>
-                        <span className="pack_tag">animation</span>
-                        <span className="pack_tag">motion</span>
-                        <span className="pack_tag">motion</span>
+                        {tagNodes}
                     </div>
                     <span className="pack_info_version">1.0.3</span>
                 </header>
                 <div className="pack_info_desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {pack.description}
                 </div>
             </section>
         );
     }
 }
+
+PackageInfo.propTypes = {
+    pack: PropTypes.shape({
+        name:        PropTypes.string.isRequired,
+        version:     PropTypes.string.isRequired,
+        tags:        PropTypes.array.isRequired,
+        description: PropTypes.string.isRequired
+    })
+};
 
 
 export { PackageInfo as default };

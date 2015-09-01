@@ -13,13 +13,20 @@ const packages = [
     { name: 'react-classes',   version: '1.0.3' },
 ];
 
+let currentPackage = {
+    name:        'react',
+    version:     '1.0.3',
+    tags:        ['react', 'jsx', 'transformer', 'view'],
+    description: 'A declarative, efficient, and flexible JavaScript library for building user interfaces.'
+};
+
 const App = React.createClass({
     render() {
         return (
             <div>
                 <Header title="Hands-On React!"/>
                 <Controls items={['star-o', 'heart-o']}/>
-                <Content packages={packages}/>
+                <Content packages={packages} pack={currentPackage}/>
                 <Footer text="react"/>
             </div>
         );

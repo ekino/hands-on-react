@@ -8,7 +8,7 @@ class Content extends Component {
         return (
             <div className="app_content">
                 <PackageList {...this.props}/>
-                <PackageInfo/>
+                <PackageInfo {...this.props}/>
             </div>
         );
     }
