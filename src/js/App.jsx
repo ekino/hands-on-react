@@ -9,38 +9,68 @@ import Api                  from './Api';
 
 
 const packages = [
-    { name: 'react',           version: '1.0.3' },
-    { name: 'react-motion',    version: '1.0.3' },
-    { name: 'react-bootstrap', version: '1.0.3' },
-    { name: 'react-router',    version: '1.0.3' },
-    { name: 'react-classes',   version: '1.0.3' },
-];
+    {
+        name:        'react',
+        tags:        ['react', 'jsx', 'transformer', 'view'],
+        version:     '1.0.3',
+        description: 'A declarative, efficient, and flexible JavaScript library for building user interfaces.'
+    },
+    {
+        name:        'react-motion',
+        version:     '1.0.3',
+        tags:        ['react', 'motion'],
+        description: 'react-motion'
 
-let currentPackage = {
-    name:        'react',
-    version:     '1.0.3',
-    tags:        ['react', 'jsx', 'transformer', 'view'],
-    description: 'A declarative, efficient, and flexible JavaScript library for building user interfaces.'
-};
+    },
+    {
+        name:        'react-bootstrap',
+        version:     '1.0.3',
+        tags:        ['react', 'bootstrap'],
+        description: 'react-bootstrap'
+    },
+    {
+        name:        'react-router',
+        version:     '1.0.3',
+        tags:        ['react', 'router'],
+        description: 'react-router'
+    },
+    {
+        name:        'react-classes',
+        version:     '1.0.3',
+        tags:        ['react', 'classes'],
+        description: 'react-classes'
+    },
+];
 
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            packages: [],
-            current:  null
+            packages: packages,
+            current:  packages[0]
         };
     }
 
+    onPackClick(pack) {
+        this.setState({
+            current: pack
+        });
+    }
+
     render() {
+        let { packages, current } = this.state;
+
         return (
             <div>
                 <Header title="Hands-On React!"/>
                 <Controls items={['star-o', 'heart-o']}/>
                 <div className="app_content">
-                    <PackageList packages={packages}/>
-                    <PackageInfo pack={currentPackage}/>
+                    <PackageList
+                        packages={packages}
+                        onPackClick={this.onPackClick.bind(this)}
+                    />
+                    <PackageInfo pack={current}/>
                 </div>
                 <Footer text="react"/>
             </div>

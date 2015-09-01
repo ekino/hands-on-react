@@ -1,16 +1,14 @@
 import React, { Component, PropTypes } from 'react';
+import PackageListItem                 from './PackageListItem.jsx';
 
 
 class PackageList extends Component {
     render() {
-        let { packages } = this.props;
+        let { packages, onPackClick } = this.props;
 
         let packageNodes = packages.map(pack => {
             return (
-                <div key={pack.name} className="pack_list_item">
-                    <h3 className="pack_list_item_title">{pack.name}</h3>
-                    <span className="pack_version">{pack.version}</span>
-                </div>
+                <PackageListItem key={pack.name} pack={pack} clickHandler={onPackClick}/>
             );
         });
 
@@ -28,7 +26,8 @@ PackageList.propTypes = {
             name:    PropTypes.string.isRequired,
             version: PropTypes.string.isRequired
         })
-    ).isRequired
+    ).isRequired,
+    onPackClick: PropTypes.func.isRequired
 };
 
 

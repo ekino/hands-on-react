@@ -5,6 +5,10 @@ class PackageInfo extends Component {
     render() {
         let { pack } = this.props;
 
+        if (pack === undefined) {
+            return null;
+        }
+
         let tagNodes = pack.tags.map(tag => {
             return (
                 <span key={tag} className="pack_tag">{tag}</span>
