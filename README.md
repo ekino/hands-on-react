@@ -1,6 +1,6 @@
-# hands-on-react
+# HANDS-ON REACT
 
-## STEP 3
+## step 3
 
 - using component **state**
 - loading **async data**
