@@ -8,7 +8,7 @@ class PackageList extends Component {
 
         let packageNodes = packages.map(pack => {
             return (
-                <PackageListItem key={pack.name} pack={pack} clickHandler={onPackClick}/>
+                <PackageListItem key={pack.name} pack={pack}/>
             );
         });
 
@@ -26,8 +26,7 @@ PackageList.propTypes = {
             name:    PropTypes.string.isRequired,
             version: PropTypes.string.isRequired
         })
-    ).isRequired,
-    onPackClick: PropTypes.func.isRequired
+    ).isRequired
 };
 
 

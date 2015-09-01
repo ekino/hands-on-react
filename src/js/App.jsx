@@ -52,7 +52,7 @@ class App extends Component {
         };
     }
 
-    onPackClick(pack) {
+    onPackSelect(pack) {
         this.setState({
             current: pack
         });
@@ -66,10 +66,7 @@ class App extends Component {
                 <Header title="Hands-On React!"/>
                 <Controls items={['star-o', 'heart-o']}/>
                 <div className="app_content">
-                    <PackageList
-                        packages={packages}
-                        onPackClick={this.onPackClick.bind(this)}
-                    />
+                    <PackageList packages={packages}/>
                     <PackageInfo pack={current}/>
                 </div>
                 <Footer text="react"/>

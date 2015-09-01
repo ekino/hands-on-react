@@ -3,9 +3,9 @@ import React, { Component, PropTypes } from 'react';
 
 class PackageListItem extends Component {
     clickHandler() {
-        let { pack, clickHandler } = this.props;
+        let { pack } = this.props;
 
-        clickHandler(pack);
+        console.log('clicked on package:', pack.name);
     }
 
     render() {
@@ -24,8 +24,7 @@ PackageListItem.propTypes = {
     pack: PropTypes.shape({
         name:    PropTypes.string.isRequired,
         version: PropTypes.string.isRequired
-    }).isRequired,
-    clickHandler: PropTypes.func.isRequired
+    }).isRequired
 };
 
 
