@@ -23,4 +23,4 @@ Change **Footer** component to make it configurable via props.
 You'll see the **Controls** component now uses a loop to generate each button.
 Change **PackageList** component in order to use a loop to generate each list item.
 
-[next step >](https://github.com/plouc/hands-on-react/tree/step-3)
+[< previous step](https://github.com/plouc/hands-on-react/tree/step-1) | [next step >](https://github.com/plouc/hands-on-react/tree/step-3)
