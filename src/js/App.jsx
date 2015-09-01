@@ -10,7 +10,7 @@ const App = React.createClass({
     render() {
         return (
             <div>
-                <Header/>
+                <Header title="Hands-On React!"/>
                 <Controls/>
                 <Content/>
                 <Footer/>
