@@ -51,5 +51,5 @@ Change **Footer** component to make it configurable via props.
 
 ### STEP 2-B
 
-You'll see the **Controls** component now uses **Control** component and loop through an array in order to generate the controls.
-Change **PackageList** component to replicate this behavior.
+You'll see the **Controls** component now uses a loop to generate each button.
+Change **PackageList** component in order to use a loop to generate each list item.
