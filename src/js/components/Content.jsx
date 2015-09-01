@@ -7,7 +7,7 @@ class Content extends Component {
     render() {
         return (
             <div className="app_content">
-                <PackageList/>
+                <PackageList {...this.props}/>
                 <PackageInfo/>
             </div>
         );
