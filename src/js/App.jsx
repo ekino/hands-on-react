@@ -1,12 +1,12 @@
 import './../css/app.styl';
-import React       from 'react';
-import Header      from './components/Header.jsx';
-import Controls    from './components/Controls.jsx';
-import PackageList from './components/PackageList.jsx';
-import PackageInfo from './components/PackageInfo.jsx';
+import React, { Component } from 'react';
+import Header               from './components/Header.jsx';
+import Controls             from './components/Controls.jsx';
+import PackageList          from './components/PackageList.jsx';
+import PackageInfo          from './components/PackageInfo.jsx';
 
 
-const App = React.createClass({
+class App extends Component {
     render() {
         return (
             <div>
@@ -19,7 +19,7 @@ const App = React.createClass({
             </div>
         );
     }
-});
+}
 
 
 React.render(<App/>, document.getElementById('app'));
