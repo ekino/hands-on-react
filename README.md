@@ -1,72 +1,8 @@
-# hands-on-react
+# HANDS-ON REACT
 
-## STEP 1
+Material for a hands-on on reactjs library.
 
-- **jsx** basics
-
-```sh
-git checkout step-1
-```
-
-### STEP 1-A
-
-Move all html markup to react components, you'll find comments inside index.html
-which define the component the markup is related to, for example:
-
-```html
-<!-- begin Header.jsx -->
-<header class="app_header">
-    Hands-On React!
-</header>
-<!-- end Header.jsx -->
-```
-
-It means this markup should go inside `src/js/components/Header.jsx`:
-
-```javascript
-class Header extends Component {
-    render() {
-        return (
-            <header className="app_header">
-                Hands-On React!
-            </header>
-        );
-    }
-}
-```
-
-### STEP 1-B
-
-Perhaps you noticed, there's no **Footer** component,
-creates it (hint: it's really similar to **Header** :))
-
-
-## STEP 2
-
-- components **props**
-- props **validation**
-- component lists
-
-```sh
-git checkout step-2
-```
-
-### STEP 2-A
-
-You have an example of how to define required component props in `Header.jsx`, and how they're passed to it in `App.jsx`.
-Change **Footer** component to make it configurable via props.
-
-### STEP 2-B
-
-You'll see the **Controls** component now uses a loop to generate each button.
-Change **PackageList** component in order to use a loop to generate each list item.
-
-
-## STEP 3
-
-- loading **async data**
-- using component **state**
-
-```sh
-git checkout step-3
-```
+- [step-1](https://github.com/plouc/hands-on-react/tree/step-1)
+- [step-2](https://github.com/plouc/hands-on-react/tree/step-2)
+- [step-3](https://github.com/plouc/hands-on-react/tree/step-3)
+- [step-4](https://github.com/plouc/hands-on-react/tree/step-4)
