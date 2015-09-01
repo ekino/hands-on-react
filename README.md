@@ -1,5 +1,7 @@
 # HANDS-ON REACT
 
+[check diff with previous step](https://github.com/plouc/hands-on-react/compare/step-2...step-3)
+
 ```sh
 git checkout step-3
 ```
@@ -28,3 +30,5 @@ package to this package.
 
 You'll have to make the current package change when we click on a **PackageListItem**
 component.
+
+[next step >](https://github.com/plouc/hands-on-react/tree/step-4)
