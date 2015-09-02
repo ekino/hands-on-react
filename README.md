@@ -29,4 +29,4 @@ package to this package.
 You'll have to make the current package change when we click on a **PackageListItem**
 component.
 
-[< previous step](https://github.com/plouc/hands-on-react/tree/step-2) | [next step >](https://github.com/plouc/hands-on-react/tree/step-4)
+[< previous step](https://github.com/ekino/hands-on-react/tree/step-2) | [next step >](https://github.com/ekino/hands-on-react/tree/step-4)
