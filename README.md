@@ -2,7 +2,7 @@
 
 Material for a hands-on on reactjs library.
 
-#[Step 1 >](https://github.com/plouc/hands-on-react/tree/step-1)
+##[Step 1 >](https://github.com/plouc/hands-on-react/tree/step-1)
   - making a react **component**
   - **jsx** basics
 
